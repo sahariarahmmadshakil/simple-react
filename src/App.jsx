@@ -3,10 +3,10 @@ import './App.css'
 function App() {
   return (
     <>
-      <Student></Student>
-      <Student></Student>
-      <Student></Student>
-      <Student></Student>
+      <Student grade='A+' score='3.75'></Student>
+      <Student grade="A-" score="5.42"></Student>
+      <Student grade="D" score="3.20"></Student>
+      <Student ></Student>
       <Device name="Laptop" price="12000"></Device>
       <Device name="Phone" price='5000'></Device>
       <Device name='watch' price='2500'></Device>
@@ -22,9 +22,9 @@ function Person() {
     <h3>I am {name}. I am {age}   years old. My father name is {parents.name} </h3>
   );
 }
-function Student() {
-  return <div>
-    <h3 className='student'>I am Student</h3>
+function Student({grade=0, score=0}) {
+    return <div>
+    <h3 className='student'>I am Student. I got {grade} Also my Score is {score} </h3>
   </div>
 }
 function Device(props) {

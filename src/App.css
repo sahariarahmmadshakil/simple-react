@@ -17,9 +17,6 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-.student{
-  border: 10px solid red;
-}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
