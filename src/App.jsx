@@ -1,36 +1,22 @@
 import './App.css'
-
+import Todo from './Todo'
 function App() {
   return (
     <>
-      <Student grade='A+' score='3.75'></Student>
-      <Student grade="A-" score="5.42"></Student>
-      <Student grade="D" score="3.20"></Student>
-      <Student ></Student>
-      <Device name="Laptop" price="12000"></Device>
-      <Device name="Phone" price='5000'></Device>
-      <Device name='watch' price='2500'></Device>
+      <Town name='Magura' situated='Vairab River'></Town>
+      <Todo task='Learn React' isDOne={true}></Todo>
+      <Todo task='False' isDOne={false}></Todo>
+      <Todo task='Pe Pro' isDOne={true}></Todo>
     </>
   )
 }
 
-function Person() {
-  const name = 'Shakil'
-  const age = 20;
-  const parents = { name: 'Akbor Ali', age: 25 };
+function Town({name,situated}) {
   return (
-    <h3>I am {name}. I am {age}   years old. My father name is {parents.name} </h3>
-  );
-}
-function Student({grade=0, score=0}) {
-    return <div>
-    <h3 className='student'>I am Student. I got {grade} Also my Score is {score} </h3>
-  </div>
-}
-function Device(props) {
-  // console.log(props)
-  return (
-    <h2>This is a : {props.name} and its price is {props.price} </h2>
+    <div>
+      <h1> The Town Name Is: {name} </h1>
+      <p>it is situtated near: <u>{situated}</u> it is really beautiful and also natural family </p>
+    </div>
   )
 }
 
