@@ -4,9 +4,9 @@ function App() {
   return (
     <>
       <Town name='Magura' situated='Vairab River'></Town>
-      <Todo task='Learn React' isDOne={true}></Todo>
-      <Todo task='False' isDOne={false}></Todo>
-      <Todo task='Pe Pro' isDOne={true}></Todo>
+      <Todo task='Learn React' isDone={true}></Todo>
+      <Todo task='False' isDone={false}></Todo>
+      <Todo task='Pe Pro' isDone={true}></Todo>
     </>
   )
 }
